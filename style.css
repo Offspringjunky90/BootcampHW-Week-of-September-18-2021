@@ -172,16 +172,12 @@ img:hover{
   cursor: pointer;
 }
 
-/* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
   .header div ul li {
     flex-direction: column;
   }
-  }
-  }
 }
 
-/* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
   .header
   .header div ul li {
@@ -193,6 +189,5 @@ img:hover{
   }
   .main {
     flex-direction: column;
-  }
   }
 }
