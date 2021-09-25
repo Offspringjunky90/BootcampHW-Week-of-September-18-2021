@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: teal;
+    font-family: garamond, gil sans, cambria, constantia;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 20px;
+    font-family: garamond, gil sans, cambria, constantia;
+    background-color: #787878;
+    color: #ffffff;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+}  
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+  
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: garamond, gil sans, cambria, constantia;
+    font-size: 20px;
+}
+  
+.header div ul {
+    list-style-type: none;
+}
+  
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+    float: right;
+}
+
+#RA {
+    height: 150px;
+    width: 75px;
+    border-radius: 2px solid black;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+
+p {
+    font-size: 16px;
+    font-family: garamond, gil sans, cambria, constantia;
+}
+  
+
+.backimage {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+  display: flex;
+}
+
+.columnleft {
+  text-align: center;
+  width: 500px;
+  margin-top: 50px;
+  float: left;
+}
+
+#aboutme {
+  margin-bottom: 200px;
+  font-size: 60px;
+}
+
+#work {
+  margin-bottom: 600px;
+  font-size: 60px;
+}
+
+#contactme {
+  margin-bottom: 200px;
+  font-size: 60px;
+}
+
+#resume {
+  margin-bottom: 200px;
+  font-size: 60px;
+}
+
+.columnright {
+  width: 750px;
+  margin-top: 50px;
+  float: right;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+#aboutmeinfo {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#workbox {
+  height: 250px;
+  width: 500px;
+  border: 5px solid darkblue;
+  margin-top: 215px;
+  margin-right: 50px;
+}
+
+#ledwall {
+  height: 125px;
+  width: 240px;
+  background-image: url(./Images/ledwall.jpg);
+  border: 5px solid darkblue;
+  margin-top: 10px;
+}
+
+#calculator {
+  height: 125px;
+  width: 240px;
+  background-image: url(./Images/calculator.jpg);
+  border: 5px solid darkblue;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#pastelpuzzles {
+  height: 125px;
+  width: 240px;
+  background-image: url(./Images/pastel.jpg);
+  border: 5px solid darkblue;
+  margin-top: 15px;
+  margin-right: 250px;
+}
+
+#runbuddy {
+  height: 125px;
+  width: 240px;
+  background-image: url(./Images/run.jpg);
+  border: 5px solid darkblue;
+  margin-left: 270px;
+  margin-top: -100px;
+}
+
+#contactmeinfo {
+  margin-top: 150px;
+}
+
+#resumeinfo {
+  margin-top: 250px;
+}
+
+img:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  .header div ul li {
+    flex-direction: column;
+  }
+  }
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .header
+  .header div ul li {
+    flex-direction: column;
+    order: 2
+  }
+  .backimage {
+    order: 3
+  }
+  .main {
+    flex-direction: column;
+  }
+  }
+}
