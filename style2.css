@@ -1,172 +1,179 @@
-/* This is the border-box at the very top of the page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
+}
 
-  /* This is the website's body element. It has a background color that is a light green/blue */
+
 body {
     background-color: teal;
-  }
-  
-  /* This is the header of the html. The header has a padding and specified font families. The background color is dark gray and my name has white color  */
-  .header {
+    font-family: garamond, gil sans, cambria, constantia;
+    justify-content: space-between;
+}
+
+.header {
     padding: 20px;
     font-family: garamond, gil sans, cambria, constantia;
     background-color: #787878;
     color: #ffffff;
-  }  
-  /* This is the website header's h1 element. It has a display of inline-block that allows the element to have a set width and height. H1 also hase a font size of 48 pixels. */
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+}  
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
-  }
+}
   
-  /* This is also part of the header. This paticular div element is specifing where the text will go on the header, which font-family to use and font size. */
-  .header div {
+
+.header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: garamond, gil sans, cambria, constantia;
     font-size: 20px;
-  }
+}
   
-  /* This is the div elements unorganized list. There is no specified list style type. */
-  .header div ul {
+.header div ul {
     list-style-type: none;
-  }
+}
   
-  /* This is the header div list items. It has a display of inline-block and has a margin-left. */
-  .header div ul li {
+.header div ul li {
     display: inline-block;
     margin-left: 25px;
-  }
+    float: right;
+}
   
-  /* This is the header's anchor element. It is specifying that it's text color is white and no text-decoration. */
-  a {
+
+a {
     color: #ffffff;
     text-decoration: none;
-  }
+}
   
-  /* This is the body's paragraph element. It is specifying that is has a font size of 16px. */
-  p {
+
+p {
     font-size: 16px;
-  }
+    font-family: garamond, gil sans, cambria, constantia;
+}
   
-  /* This is the body's background image. It has a specified height/width, margins and is centered in the website. */
-  .backimage {
+
+.backimage {
     height: 500px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("./Images/Background.jpg");
     background-size: cover;
     background-position: center;
-  }
-
-  .column {
-    float: left;
-    width: 50%;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-/* About Me*/
-  h2 {
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 100px;
-  }
-/* Work */
-  h3 {
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 250px;
-  }
-
-  h4 {
-    text-align: center;
-    font-size: 50px;
-    padding-bottom:100px;
-  }
-
-  h5 {
-    text-align: center;
-    font-size: 50px;
-    padding-bottom:100px;
-  }
-  #work {
-    height: 250px;
-    width: 500px;
-    background-image: url(./Images/waves.jpg);
-    border: 5px solid darkblue;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  #ledwall {
-    height: 125px;
-    width: 240px;
-    background-image: url(./Images/ledwall.jpg);
-    border: 5px solid darkblue;
-    margin-top: -95px;
-    float: left;
 }
-  #calculator {
-    height: 125px;
-    width: 240px;
-    background-image: url(./Images/calculator.jpg);
-    border: 5px solid darkblue;
-    margin-top: -95px;
-    float: right;
-    margin-right: 170px;
+
+.main {
+  display: flex;
 }
+
+.columnleft {
+  text-align: center;
+  width: 500px;
+  margin-top: 50px;
+  float: left;
+}
+
+#aboutme {
+  margin-bottom: 200px;
+  font-size: 60px;
+}
+
+#work {
+  margin-bottom: 600px;
+  font-size: 60px;
+}
+
+#contactme {
+  margin-bottom: 200px;
+  font-size: 60px;
+}
+
+#resume {
+  margin-bottom: 200px;
+  font-size: 60px;
+}
+
+.columnright {
+  width: 750px;
+  margin-top: 50px;
+  float: right;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+#aboutmeinfo {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#workbox {
+  height: 250px;
+  width: 500px;
+  border: 5px solid darkblue;
+  margin-top: 215px;
+  margin-right: 50px;
+}
+
+#ledwall {
+  height: 125px;
+  width: 240px;
+  background-image: url(./Images/ledwall.jpg);
+  border: 5px solid darkblue;
+  position: relative;
+  margin-top: 10px;
+  float: left;
+}
+
+#calculator {
+  height: 125px;
+  width: 240px;
+  background-image: url(./Images/calculator.jpg);
+  border: 5px solid darkblue;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 #pastelpuzzles {
   height: 125px;
   width: 240px;
   background-image: url(./Images/pastel.jpg);
   border: 5px solid darkblue;
-  margin-top: 5px;
-  float: left;
+  position: relative;
+  margin-top: 15px;
+  margin-right: 250px;
 }
+
 #runbuddy {
   height: 125px;
   width: 240px;
   background-image: url(./Images/run.jpg);
   border: 5px solid darkblue;
-  margin-top: 5px;
+  position: relative;
   float: right;
-  margin-right: 170px;
+  margin-top: 15px;
+  margin-left: 555px;
 }
-  /* This is the footer class located on the very bottom of the website. It has a specified padding, font family and it's text is centered. */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-align: center;
+
+#contactmeinfo {
+  margin-top:;
+}
+
+#resumeinfo {
+  margin-top: 250px;
+}
+
+.fadein img{
+  opacity:0.5;
+  transition: 1s ease;
   }
   
-  /* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-    header {
-      background: #772014;
-    }
+.fadein img:hover{
+  opacity:1;
+  transition: 1s ease;
   }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
-    }
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
-  
