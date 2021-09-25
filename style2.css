@@ -44,7 +44,12 @@ body {
     margin-left: 25px;
     float: right;
 }
-  
+
+#RA {
+    height: 150px;
+    width: 75px;
+    border-radius: 2px solid black;
+}
 
 a {
     color: #ffffff;
@@ -124,9 +129,7 @@ p {
   width: 240px;
   background-image: url(./Images/ledwall.jpg);
   border: 5px solid darkblue;
-  position: relative;
   margin-top: 10px;
-  float: left;
 }
 
 #calculator {
@@ -134,7 +137,6 @@ p {
   width: 240px;
   background-image: url(./Images/calculator.jpg);
   border: 5px solid darkblue;
-  position: relative;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -144,7 +146,6 @@ p {
   width: 240px;
   background-image: url(./Images/pastel.jpg);
   border: 5px solid darkblue;
-  position: relative;
   margin-top: 15px;
   margin-right: 250px;
 }
@@ -154,26 +155,44 @@ p {
   width: 240px;
   background-image: url(./Images/run.jpg);
   border: 5px solid darkblue;
-  position: relative;
-  float: right;
-  margin-top: 15px;
-  margin-left: 555px;
+  margin-left: 270px;
+  margin-top: -100px;
 }
 
 #contactmeinfo {
-  margin-top:;
+  margin-top: 150px;
 }
 
 #resumeinfo {
   margin-top: 250px;
 }
 
-.fadein img{
-  opacity:0.5;
-  transition: 1s ease;
+img:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  .header div ul li {
+    flex-direction: column;
   }
-  
-.fadein img:hover{
-  opacity:1;
-  transition: 1s ease;
   }
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .header
+  .header div ul li {
+    flex-direction: column;
+    order: 2
+  }
+  .backimage {
+    order: 3
+  }
+  .main {
+    flex-direction: column;
+  }
+  }
+}
