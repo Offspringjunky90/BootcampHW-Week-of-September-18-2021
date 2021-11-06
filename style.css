@@ -9,7 +9,6 @@ body {
     background-color: teal;
     color: white;
     font-family: garamond, gil sans, cambria, constantia;
-    /* justify-content: space-between; */
 }
 
 .header {
@@ -17,8 +16,6 @@ body {
     font-family: garamond, gil sans, cambria, constantia;
     background-color: #787878;
     color: #ffffff;
-    flex-wrap: nowrap;
-    flex-flow: column wrap;
     display: flex;
     justify-content: space-between;
 }  
